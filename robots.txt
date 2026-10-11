@@ -1,0 +1,9 @@
+# Robots.txt for New Heights Builders
+# Static website hosted on GitHub Pages
+
+User-agent: *
+Allow: /
+
+# Replace USERNAME and REPOSITORY with your GitHub details or custom domain:
+# Sitemap: https://USERNAME.github.io/REPOSITORY/sitemap.xml
+Sitemap: sitemap.xml

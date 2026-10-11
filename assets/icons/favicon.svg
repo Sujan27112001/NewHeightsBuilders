@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" fill="none">
+  <!-- New Heights Builders Official Logo Vector -->
+  <!-- Pine Tree Silhouette in Deep Royal Navy -->
+  <path d="M356 106L369 136H361L378 174H368L394 220H382L412 268L398 274L408 356H392L384 278L360 274L354 220H344L330 174H338L324 136H334L356 106Z" fill="#0047A0"/>
+  
+  <!-- Modern Triangular Gable Roof Chevron in Azure Sky Blue -->
+  <path d="M260 138L430 388H395L260 188L125 388H90L260 138Z" fill="#08AAFA"/>
+  
+  <!-- 2x2 Window Grid in Deep Royal Navy -->
+  <!-- Top Left Window -->
+  <rect x="205" y="300" width="44" height="42" rx="2" fill="#0047A0"/>
+  <!-- Top Right Window -->
+  <rect x="257" y="300" width="44" height="42" rx="2" fill="#0047A0"/>
+  <!-- Bottom Left Window -->
+  <rect x="205" y="348" width="44" height="42" rx="2" fill="#0047A0"/>
+  <!-- Bottom Right Window -->
+  <rect x="257" y="348" width="44" height="42" rx="2" fill="#0047A0"/>
+</svg>
