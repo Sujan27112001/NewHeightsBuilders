@@ -136,8 +136,18 @@
   }
 
   .hero {
+    min-height: auto;
     padding-top: var(--space-2xl);
     padding-bottom: var(--space-2xl);
+  }
+
+  .hero-gradient {
+    background: 
+      linear-gradient(180deg, 
+        rgba(10, 16, 30, 0.82) 0%, 
+        rgba(10, 16, 30, 0.65) 50%, 
+        rgba(10, 16, 30, 0.88) 100%
+      );
   }
 
   .hero-desc {
