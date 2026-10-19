@@ -357,15 +357,12 @@ p.lead {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(248, 250, 252, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: #ffffff;
   border-bottom: 1px solid var(--color-concrete-light);
-  transition: all var(--transition-normal);
+  transition: box-shadow var(--transition-normal);
 }
 
 .site-header.is-scrolled {
-  background-color: rgba(255, 255, 255, 0.98);
   box-shadow: var(--shadow-sm);
 }
 
@@ -484,6 +481,24 @@ p.lead {
   width: 24px;
   height: 24px;
   display: block;
+}
+
+.menu-icon line {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon line:nth-child(1) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon line:nth-child(2) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* ==========================================================================

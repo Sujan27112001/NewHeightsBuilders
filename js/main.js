@@ -74,7 +74,8 @@ function initNavigation() {
     document.body.classList.remove('nav-locked');
   }
 
-  toggleBtn.addEventListener('click', () => {
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
     if (isExpanded) {
       closeMenu();
@@ -105,6 +106,13 @@ function initNavigation() {
     if (navMenu.classList.contains('is-open') &&
         !navMenu.contains(e.target) &&
         !toggleBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Automatically reset menu state if viewport is resized to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024 && navMenu.classList.contains('is-open')) {
       closeMenu();
     }
   });
